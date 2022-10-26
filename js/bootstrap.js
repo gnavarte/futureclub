@@ -3,17 +3,6 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under the MIT license
  */
-window.watsonAssistantChatOptions = {
-  integrationID: "3521646b-d404-41bc-9c8e-1ab25cb345e5", // The ID of this integration.
-  region: "us-south", // The region your integration is hosted in.
-  serviceInstanceID: "fa1d153f-8bfd-4cbc-90ee-60c3f2a6962f", // The ID of your service instance.
-  onLoad: function(instance) { instance.render(); }
-};
-setTimeout(function(){
-  const t=document.createElement('script');
-  t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-  document.head.appendChild(t);
-});
 
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery')
