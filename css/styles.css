@@ -1,0 +1,67 @@
+/********** BASE STYLES **********/
+body {
+	background-color: #e0dacb;
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+}
+
+/********** HEADER **********/
+#header-nav {background-color: white;}
+.navbar-brand a {text-decoration: none;}
+.navbar-brand h1 {
+	color: #cf702e; 
+	font-family: 'Amatic SC', cursive;
+	font-size: 80px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#nav-list span {margin-bottom: 10px;}
+#nav-list a {
+	color: #cf702e; 
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {border: solid; color: #cf702e;}
+
+/********** MAIN CONTENT **********/
+#home-tiles > div {margin-bottom: 10px;}
+#section1, #section2, #section3 {border: 1px solid black;}
+#section1 h2, #section2 h2, #section3 h2 {border-bottom: 1px solid black; margin: 0px; padding-bottom: 5px; background-color: #cc976f;}
+#section1 p {background-color: #d59898; margin-bottom: 0px;}
+#section2 p {background-color: #c14543; margin-bottom: 0px;}
+#section3 p {background-color: #e5d198; margin-bottom: 0px;}
+#section1 div, #section2 div, #section3 div {border-top: 1px solid black; margin: 0px; padding-top: 5px; background-color: #cc976f;}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	.navbar-brand {height: auto;}
+	#logo-img {background: url("../images/logo-example.png") no-repeat; width: 150px; height: 150px; margin: 10px;}
+	#nav-list {visibility: hidden;}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.navbar-brand {height: auto;}
+	#logo-img {background: url("../images/logo-example-md.png") no-repeat; width: 100px; height: 100px; margin: 10px;}
+	#nav-list {visibility: hidden;}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar-brand {height: auto;}
+	#nav-list {visibility: hidden;}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+	.navbar-brand {height: auto;}
+}
+
+/********** Super extra small devices only **********/
+@media (max-width: 479px) {
+	.navbar-brand {height: auto;}
+}
